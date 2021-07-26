@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 export const Starred = () => {
   return (
-    <div>
-      THIS IS STARRED 
-    </div>
+    <div>THIS IS STARRED</div>
+      
+    
   )
 }
