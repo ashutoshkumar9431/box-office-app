@@ -1,5 +1,8 @@
 import React ,{useState}from 'react'
 import { MainPageLayout } from '../components/MainPageLayout'
+import ShowGrid from '../components/shows/ShowGrid'
+import ActorGrid from '../components/actor/ActorGrid'
+
 import  {apiGet}  from '../misc/config'
 
 export const Home = () => {
@@ -12,6 +15,7 @@ export const Home = () => {
   const onClickChange = () => {
     apiGet(`/search/${searchOptions}?q=${input}`).then(result => {
       setResult(result);
+      console.log(results)
     });
   };
   const newInput = (ev) =>
@@ -30,10 +34,7 @@ export const Home = () => {
      }
      if(results && results.length>0)
      {
-      return  results[0].show ? 
-      results.map( (items) => <div key = {items.show.id}>{items.show.name}</div>) :
-      results.map( (items) => <div key = {items.person.id}>{items.persongifsf.name}</div>)      
-     }
+      return  results[0].show ? <ShowGrid data = {results}/> : <ActorGrid  data = {results}/>}
    return null
   }
   const  onRadioChanges = (ev) =>
