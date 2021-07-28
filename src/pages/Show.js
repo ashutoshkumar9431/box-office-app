@@ -7,6 +7,7 @@ import Season from '../components/shows/Season';
 import ShowMainData from '../components/shows/ShowMainData';
 
 import { apiGet } from '../misc/config';
+import { InfoBlock, ShowPageWrapper } from './Show.Styled';
 
 const reducer = (prevState, action) => {
   switch (action.type) {
@@ -52,12 +53,10 @@ const Show = () => {
         }
       });
 
-    return () => {// exit function
+    return () => {
       isMounted = false;
     };
   }, [id]);
-
-  console.log('show', show);
 
   if (isLoading) {
     return <div>Data is being loaded</div>;
@@ -67,30 +66,36 @@ const Show = () => {
     return <div>Error occured: {error}</div>;
   }
 
-  return <div>
-      <ShowMainData image={show.image}
+  return (
+    <ShowPageWrapper>
+      <ShowMainData
+        image={show.image}
         name={show.name}
         rating={show.rating}
         summary={show.summary}
-        tags={show.genres}/>
+        tags={show.genres}
+      />
 
-      <div>
+      <InfoBlock>
         <h2>Details</h2>
-        <Detail status={show.status}
+        <Detail
+          status={show.status}
           network={show.network}
-          premiered={show.premiered}/>
-      </div>
+          premiered={show.premiered}
+        />
+      </InfoBlock>
 
-      <div>
+      <InfoBlock>
         <h2>Seasons</h2>
         <Season seasons={show._embedded.seasons} />
-      </div>
+      </InfoBlock>
 
-      <div>
+      <InfoBlock>
         <h2>Cast</h2>
-          <Cast cast = {show._embedded.cast}/>
-      </div>
-    </div>
+        <Cast cast={show._embedded.cast} />
+      </InfoBlock>
+    </ShowPageWrapper>
+  );
 };
 
 export default Show;
