@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/box-office-app/static/css/main.5fffadb5.chunk.css",
-    "main.js": "/box-office-app/static/js/main.e52f43fb.chunk.js",
-    "main.js.map": "/box-office-app/static/js/main.e52f43fb.chunk.js.map",
+    "main.js": "/box-office-app/static/js/main.1c944e6c.chunk.js",
+    "main.js.map": "/box-office-app/static/js/main.1c944e6c.chunk.js.map",
     "runtime-main.js": "/box-office-app/static/js/runtime-main.16370042.js",
     "runtime-main.js.map": "/box-office-app/static/js/runtime-main.16370042.js.map",
-    "static/js/2.51470216.chunk.js": "/box-office-app/static/js/2.51470216.chunk.js",
-    "static/js/2.51470216.chunk.js.map": "/box-office-app/static/js/2.51470216.chunk.js.map",
+    "static/js/2.9abe8b6a.chunk.js": "/box-office-app/static/js/2.9abe8b6a.chunk.js",
+    "static/js/2.9abe8b6a.chunk.js.map": "/box-office-app/static/js/2.9abe8b6a.chunk.js.map",
     "index.html": "/box-office-app/index.html",
     "service-worker.js": "/box-office-app/service-worker.js",
     "service-worker.js.map": "/box-office-app/service-worker.js.map",
     "static/css/main.5fffadb5.chunk.css.map": "/box-office-app/static/css/main.5fffadb5.chunk.css.map",
-    "static/js/2.51470216.chunk.js.LICENSE.txt": "/box-office-app/static/js/2.51470216.chunk.js.LICENSE.txt"
+    "static/js/2.9abe8b6a.chunk.js.LICENSE.txt": "/box-office-app/static/js/2.9abe8b6a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16370042.js",
-    "static/js/2.51470216.chunk.js",
+    "static/js/2.9abe8b6a.chunk.js",
     "static/css/main.5fffadb5.chunk.css",
-    "static/js/main.e52f43fb.chunk.js"
+    "static/js/main.1c944e6c.chunk.js"
   ]
 }
