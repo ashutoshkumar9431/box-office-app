@@ -1,5 +1,5 @@
 import React ,{useState}from 'react'
-import { MainPageLayout } from '../components/MainPageLayout'
+import  MainPageLayout  from '../components/MainPageLayout'
 import ShowGrid from '../components/shows/ShowGrid'
 import ActorGrid from '../components/actor/ActorGrid'
 import  {apiGet}  from '../misc/config'
@@ -68,6 +68,6 @@ export const Home = () => {
         </div>
        <button type = "button" onClick = {onClickChange}>Search</button>
        {renderResult()}
-      </MainPageLayout>
+       </MainPageLayout>
   )
 }
